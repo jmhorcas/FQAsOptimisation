@@ -1,0 +1,13 @@
+MessageSize,Framework,Algorithm,KeySize,Mode,Padding,Energy Consumption (J),Computational Time (ms)
+100,javax.crypto,AES,16,CBC,PKCS5,4.18,170
+100,javax.crypto,DESede,24,CBC,PKCS5,4.48,165
+100,javax.crypto,Blowfish,16,CBC,PKCS5,4.53,157
+100,Bouncy Castle,AES,16,CBC,PKCS5,4.54,157
+100,Bouncy Castle,DESede,24,CBC,PKCS5,4.6,160
+100,Bouncy Castle,Blowfish,16,CBC,PKCS5,4.54,157
+10000,javax.crypto,AES,16,CBC,PKCS5,10.18,478
+10000,javax.crypto,DESede,24,CBC,PKCS5,10.63,471
+10000,javax.crypto,Blowfish,16,CBC,PKCS5,11.45,437
+10000,Bouncy Castle,AES,16,CBC,PKCS5,11.56,446
+10000,Bouncy Castle,DESede,24,CBC,PKCS5,11.62,423
+10000,Bouncy Castle,Blowfish,16,CBC,PKCS5,11.49,438

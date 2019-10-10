@@ -5,6 +5,7 @@ import org.eclipse.emf.common.util.EList;
 import models.nfps.NFPsInformation;
 import uma.caosd.FQAsArchitecture.FQA;
 import uma.caosd.FQAsArchitecture.FQAsArchitectureModel;
+import uma.caosd.FQAsArchitecture.Joinpoint;
 import uk.ac.kcl.inf.mdeoptimiser.libraries.core.optimisation.IGuidanceFunction;
 import uk.ac.kcl.inf.mdeoptimiser.libraries.core.optimisation.interpreter.guidance.Solution;
 
@@ -18,9 +19,12 @@ public class MinimiseExecutionTime implements IGuidanceFunction {
 		for (FQA c : fqas) {
 			String name = c.getName();
 			int id = c.getConfiguration().getId();
-			totalExecutionTime += NFPsInformation.getComputationalTime(name, id);
+			
+			for (Joinpoint jp : c.getAppliesOver()) {
+				totalExecutionTime += NFPsInformation.getExecutionTime(name, id, jp.getUsagecontext());	
+			}
 		}
-		return totalExecutionTime * -1d;	
+		return totalExecutionTime;	
 	}
 
 	@Override

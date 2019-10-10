@@ -1,17 +1,17 @@
 problem {
 	basepath <src/main/resources/models/>
 	metamodel <uma.caosd.FQAsArchitecture.FQAsArchitecturePackage>
-	model <example_2.xmi>
+	model <example_logging_encryption.xmi>
 }
 goal {
-//	objective ApplicationFQAs maximise java { "models.fitness.MaximiseApplicationOfFQAs" }
+//	objective ApplicationFQAs maximise java { "models.fitness.MaximiseApplicationOfFQAs" } // only for testing purpose
 	objective Components minimise java { "models.fitness.MinimiseComponents" }
 	objective EnergyConsumption minimise java { "models.fitness.MinimiseEnergyConsumption" }
-//	objective ExecutionTime minimise java { "models.fitness.MinimiseExecutionTime" }
+	objective ExecutionTime minimise java { "models.fitness.MinimiseExecutionTime" }
 	constraint CoverAllJoinpoints java { "models.constraints.CoverAllJoinpoints" }
 	
-//	constraint ValidConfigurations java { "models.constraints.ValidConfigurations" }
-//	constraint ValidUsageContext java { "models.constraints.ValidUsageContext" }
+//	constraint ValidConfigurations java { "models.constraints.ValidConfigurations" } 	// not necessary (bad definition)
+//	constraint ValidUsageContext java { "models.constraints.ValidUsageContext" }		// not necessary (bad definition)
 }
 search { 
 	mutate using <FQAsEvolvers.henshin> unit "weaveFQA"
