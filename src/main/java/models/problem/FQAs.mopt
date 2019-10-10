@@ -1,0 +1,36 @@
+problem {
+	basepath <src/main/resources/models/>
+	metamodel <uma.caosd.FQAsArchitecture.FQAsArchitecturePackage>
+	model <example_2.xmi>
+}
+goal {
+	objective ApplicationFQAs maximise java { "models.fitness.MaximiseApplicationOfFQAs" }
+	objective Components minimise java { "models.fitness.MinimiseComponents" }
+//	objective EnergyConsumption minimise java { "models.fitness.MinimiseEnergyConsumption" }
+	objective ExecutionTime minimise java { "models.fitness.MinimiseExecutionTime" }
+	constraint CoverAllJoinpoints java { "models.constraints.CoverAllJoinpoints" }
+}
+search { 
+	mutate using <FQAsEvolvers.henshin> unit "weaveFQA"
+	mutate using <FQAsEvolvers.henshin> unit "unweaveFQA"
+	mutate using <FQAsEvolvers.henshin> unit "cloneFQA"
+	mutate using <FQAsEvolvers.henshin> unit "deleteFQA"
+	mutate using <FQAsEvolvers.henshin> unit "nextConfig"
+	mutate using <FQAsEvolvers.henshin> unit "previousConfig"
+/*	mutate using <FQAsEvolvers.henshin> unit "changeConfiguration" parameters {
+		delta => random("1, -1")
+	}
+*/
+}
+solver {
+	optimisation provider moea algorithm NSGAII {
+		population: 50
+		variation: mutation
+		mutation.step: 1
+		mutation.strategy: random
+	}
+	termination {
+		evolutions: 500
+	}
+	batches 1
+}

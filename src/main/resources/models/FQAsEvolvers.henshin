@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_3c65cOX9EemtrJbuUY2Hnw">
+  <imports href="http://caosd.lcc.uma.es/FQAsArchitecture#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_DJqNYOX-EemtrJbuUY2Hnw" name="weaveFQA">
+    <parameters xmi:id="_FxLCMOX-EemtrJbuUY2Hnw" name="fqa" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_DJ6FAOX-EemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_HEIe4OX-EemtrJbuUY2Hnw" outgoing="_KJHS0OX-EemtrJbuUY2Hnw _LHHzMOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_H24xgOX-EemtrJbuUY2Hnw" incoming="_KJHS0OX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_T8a_8OX-EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_IS6mMOX-EemtrJbuUY2Hnw" incoming="_LHHzMOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <edges xmi:id="_KJHS0OX-EemtrJbuUY2Hnw" source="_HEIe4OX-EemtrJbuUY2Hnw" target="_H24xgOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_LHHzMOX-EemtrJbuUY2Hnw" source="_HEIe4OX-EemtrJbuUY2Hnw" target="_IS6mMOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_SHISQ-X-EemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_SHISROX-EemtrJbuUY2Hnw">
+          <conclusion xmi:id="_SHISReX-EemtrJbuUY2Hnw" name="2">
+            <nodes xmi:id="_SHI5UOX-EemtrJbuUY2Hnw" outgoing="_SHI5VOX-EemtrJbuUY2Hnw _SHI5V-X-EemtrJbuUY2Hnw _Sl7HEOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+            </nodes>
+            <nodes xmi:id="_SHI5UuX-EemtrJbuUY2Hnw" incoming="_SHI5VOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_T8bnAOX-EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_SHI5VeX-EemtrJbuUY2Hnw" incoming="_SHI5V-X-EemtrJbuUY2Hnw _TCOBgOX-EemtrJbuUY2Hnw" outgoing="_TQxa4OX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+            </nodes>
+            <nodes xmi:id="_SHISQOX-EemtrJbuUY2Hnw" incoming="_Sl7HEOX-EemtrJbuUY2Hnw _TQxa4OX-EemtrJbuUY2Hnw" outgoing="_TCOBgOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_US_F0OX-EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_SHI5VOX-EemtrJbuUY2Hnw" source="_SHI5UOX-EemtrJbuUY2Hnw" target="_SHI5UuX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+            </edges>
+            <edges xmi:id="_SHI5V-X-EemtrJbuUY2Hnw" source="_SHI5UOX-EemtrJbuUY2Hnw" target="_SHI5VeX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+            </edges>
+            <edges xmi:id="_Sl7HEOX-EemtrJbuUY2Hnw" source="_SHI5UOX-EemtrJbuUY2Hnw" target="_SHISQOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+            </edges>
+            <edges xmi:id="_TCOBgOX-EemtrJbuUY2Hnw" source="_SHISQOX-EemtrJbuUY2Hnw" target="_SHI5VeX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+            </edges>
+            <edges xmi:id="_TQxa4OX-EemtrJbuUY2Hnw" source="_SHI5VeX-EemtrJbuUY2Hnw" target="_SHISQOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint/fqas"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_SHI5UeX-EemtrJbuUY2Hnw" origin="_HEIe4OX-EemtrJbuUY2Hnw" image="_SHI5UOX-EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_SHI5U-X-EemtrJbuUY2Hnw" origin="_H24xgOX-EemtrJbuUY2Hnw" image="_SHI5UuX-EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_SHI5VuX-EemtrJbuUY2Hnw" origin="_IS6mMOX-EemtrJbuUY2Hnw" image="_SHI5VeX-EemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_DJ6FAeX-EemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_HEIe4eX-EemtrJbuUY2Hnw" outgoing="_KJH54OX-EemtrJbuUY2Hnw _LHIaQOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_H24xgeX-EemtrJbuUY2Hnw" incoming="_KJH54OX-EemtrJbuUY2Hnw" outgoing="_KaJ_gOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_T8a_8eX-EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_IS6mMeX-EemtrJbuUY2Hnw" incoming="_LHIaQOX-EemtrJbuUY2Hnw _KaJ_gOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <edges xmi:id="_KJH54OX-EemtrJbuUY2Hnw" source="_HEIe4eX-EemtrJbuUY2Hnw" target="_H24xgeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_LHIaQOX-EemtrJbuUY2Hnw" source="_HEIe4eX-EemtrJbuUY2Hnw" target="_IS6mMeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+      <edges xmi:id="_KaJ_gOX-EemtrJbuUY2Hnw" source="_H24xgeX-EemtrJbuUY2Hnw" target="_IS6mMeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_HEIe4uX-EemtrJbuUY2Hnw" origin="_HEIe4OX-EemtrJbuUY2Hnw" image="_HEIe4eX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_H24xguX-EemtrJbuUY2Hnw" origin="_H24xgOX-EemtrJbuUY2Hnw" image="_H24xgeX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_IS6mMuX-EemtrJbuUY2Hnw" origin="_IS6mMOX-EemtrJbuUY2Hnw" image="_IS6mMeX-EemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_e1Sm8OX-EemtrJbuUY2Hnw" name="unweaveFQA">
+    <lhs xmi:id="_e1VqQOX-EemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_kKHWkOX-EemtrJbuUY2Hnw" outgoing="_lxIXsOX-EemtrJbuUY2Hnw _mCLEYOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_kzLhsOX-EemtrJbuUY2Hnw" incoming="_mCLEYOX-EemtrJbuUY2Hnw" outgoing="_mYKigOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+      </nodes>
+      <nodes xmi:id="_lKJ3QOX-EemtrJbuUY2Hnw" incoming="_lxIXsOX-EemtrJbuUY2Hnw _mYKigOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <edges xmi:id="_lxIXsOX-EemtrJbuUY2Hnw" source="_kKHWkOX-EemtrJbuUY2Hnw" target="_lKJ3QOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+      <edges xmi:id="_mCLEYOX-EemtrJbuUY2Hnw" source="_kKHWkOX-EemtrJbuUY2Hnw" target="_kzLhsOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_mYKigOX-EemtrJbuUY2Hnw" source="_kzLhsOX-EemtrJbuUY2Hnw" target="_lKJ3QOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_e1VqQeX-EemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_kKHWkeX-EemtrJbuUY2Hnw" outgoing="_lxIXseX-EemtrJbuUY2Hnw _mCLrcOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_kzLhseX-EemtrJbuUY2Hnw" incoming="_mCLrcOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+      </nodes>
+      <nodes xmi:id="_lKJ3QeX-EemtrJbuUY2Hnw" incoming="_lxIXseX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <edges xmi:id="_lxIXseX-EemtrJbuUY2Hnw" source="_kKHWkeX-EemtrJbuUY2Hnw" target="_lKJ3QeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+      <edges xmi:id="_mCLrcOX-EemtrJbuUY2Hnw" source="_kKHWkeX-EemtrJbuUY2Hnw" target="_kzLhseX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_kKHWkuX-EemtrJbuUY2Hnw" origin="_kKHWkOX-EemtrJbuUY2Hnw" image="_kKHWkeX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_kzLhsuX-EemtrJbuUY2Hnw" origin="_kzLhsOX-EemtrJbuUY2Hnw" image="_kzLhseX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_lKKeUOX-EemtrJbuUY2Hnw" origin="_lKJ3QOX-EemtrJbuUY2Hnw" image="_lKJ3QeX-EemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tDOsUOX-EemtrJbuUY2Hnw" name="cloneFQA">
+    <parameters xmi:id="_vgD7IOX-EemtrJbuUY2Hnw" name="fqa" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_vgEiMOX-EemtrJbuUY2Hnw" name="id1" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_vgEiMeX-EemtrJbuUY2Hnw" name="id2" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_tDRIkOX-EemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_wgut8OX-EemtrJbuUY2Hnw" outgoing="_yvOl0OX-EemtrJbuUY2Hnw _HzmXgOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_w_iw4OX-EemtrJbuUY2Hnw" incoming="_yvOl0OX-EemtrJbuUY2Hnw _0E5YQOX-EemtrJbuUY2Hnw" outgoing="_zGPXoOX-EemtrJbuUY2Hnw _zabe8OX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_Nh0ekOX_EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_xnGgIOX-EemtrJbuUY2Hnw" incoming="_zGPXoOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_Onj-oOX_EemtrJbuUY2Hnw" value="id1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_yK0RMOX-EemtrJbuUY2Hnw" incoming="_zabe8OX-EemtrJbuUY2Hnw _HzmXgOX_EemtrJbuUY2Hnw" outgoing="_0E5YQOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <edges xmi:id="_yvOl0OX-EemtrJbuUY2Hnw" source="_wgut8OX-EemtrJbuUY2Hnw" target="_w_iw4OX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_zGPXoOX-EemtrJbuUY2Hnw" source="_w_iw4OX-EemtrJbuUY2Hnw" target="_xnGgIOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <edges xmi:id="_zabe8OX-EemtrJbuUY2Hnw" source="_w_iw4OX-EemtrJbuUY2Hnw" target="_yK0RMOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+      </edges>
+      <edges xmi:id="_0E5YQOX-EemtrJbuUY2Hnw" source="_yK0RMOX-EemtrJbuUY2Hnw" target="_w_iw4OX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint/fqas"/>
+      </edges>
+      <edges xmi:id="_HzmXgOX_EemtrJbuUY2Hnw" source="_wgut8OX-EemtrJbuUY2Hnw" target="_yK0RMOX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_8Vjm4uX-EemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_8Vjm4-X-EemtrJbuUY2Hnw">
+          <conclusion xmi:id="_8Vjm5OX-EemtrJbuUY2Hnw">
+            <nodes xmi:id="_8Vjm5eX-EemtrJbuUY2Hnw" outgoing="_8Vjm6eX-EemtrJbuUY2Hnw _F9z6kOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+            </nodes>
+            <nodes xmi:id="_8Vjm5-X-EemtrJbuUY2Hnw" incoming="_8Vjm6eX-EemtrJbuUY2Hnw _8Vjm7OX-EemtrJbuUY2Hnw" outgoing="_8Vjm7-X-EemtrJbuUY2Hnw _8Vjm8OX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_Nh2TweX_EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_8Vjm6uX-EemtrJbuUY2Hnw" incoming="_8Vjm8OX-EemtrJbuUY2Hnw" outgoing="_8Vjm7OX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+            </nodes>
+            <nodes xmi:id="_8Vjm7eX-EemtrJbuUY2Hnw" incoming="_8Vjm7-X-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_OnklseX_EemtrJbuUY2Hnw" value="id1">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_8Vi_0OX-EemtrJbuUY2Hnw" incoming="_F9z6kOX_EemtrJbuUY2Hnw" outgoing="_HMbp0OX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_QUh2wOX_EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_92fOIOX-EemtrJbuUY2Hnw" incoming="_HMbp0OX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_Srxa8OX_EemtrJbuUY2Hnw" value="id2">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_8Vjm6eX-EemtrJbuUY2Hnw" source="_8Vjm5eX-EemtrJbuUY2Hnw" target="_8Vjm5-X-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+            </edges>
+            <edges xmi:id="_8Vjm7OX-EemtrJbuUY2Hnw" source="_8Vjm6uX-EemtrJbuUY2Hnw" target="_8Vjm5-X-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint/fqas"/>
+            </edges>
+            <edges xmi:id="_8Vjm7-X-EemtrJbuUY2Hnw" source="_8Vjm5-X-EemtrJbuUY2Hnw" target="_8Vjm7eX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+            </edges>
+            <edges xmi:id="_8Vjm8OX-EemtrJbuUY2Hnw" source="_8Vjm5-X-EemtrJbuUY2Hnw" target="_8Vjm6uX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+            </edges>
+            <edges xmi:id="_F9z6kOX_EemtrJbuUY2Hnw" source="_8Vjm5eX-EemtrJbuUY2Hnw" target="_8Vi_0OX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+            </edges>
+            <edges xmi:id="_HMbp0OX_EemtrJbuUY2Hnw" source="_8Vi_0OX-EemtrJbuUY2Hnw" target="_92fOIOX-EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_8Vjm5uX-EemtrJbuUY2Hnw" origin="_wgut8OX-EemtrJbuUY2Hnw" image="_8Vjm5eX-EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_8Vjm6OX-EemtrJbuUY2Hnw" origin="_w_iw4OX-EemtrJbuUY2Hnw" image="_8Vjm5-X-EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_8Vjm6-X-EemtrJbuUY2Hnw" origin="_yK0RMOX-EemtrJbuUY2Hnw" image="_8Vjm6uX-EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_8Vjm7uX-EemtrJbuUY2Hnw" origin="_xnGgIOX-EemtrJbuUY2Hnw" image="_8Vjm7eX-EemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_tDRIkeX-EemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_wgvVAOX-EemtrJbuUY2Hnw" outgoing="_yvOl0eX-EemtrJbuUY2Hnw _Eid98OX_EemtrJbuUY2Hnw _HzmXgeX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_w_iw4eX-EemtrJbuUY2Hnw" incoming="_yvOl0eX-EemtrJbuUY2Hnw _0E5YQeX-EemtrJbuUY2Hnw" outgoing="_zGPXoeX-EemtrJbuUY2Hnw _zabe8eX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_Nh2TwOX_EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_xnGgIeX-EemtrJbuUY2Hnw" incoming="_zGPXoeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_OnklsOX_EemtrJbuUY2Hnw" value="id1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_yK0RMeX-EemtrJbuUY2Hnw" incoming="_zabe8eX-EemtrJbuUY2Hnw _HzmXgeX_EemtrJbuUY2Hnw" outgoing="_0E5YQeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+      </nodes>
+      <nodes xmi:id="_DP_CYOX_EemtrJbuUY2Hnw" incoming="_Eid98OX_EemtrJbuUY2Hnw" outgoing="_E5pH0OX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_RMnVUOX_EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_D9oLgOX_EemtrJbuUY2Hnw" incoming="_E5pH0OX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_RuM_cOX_EemtrJbuUY2Hnw" value="id1+1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_yvOl0eX-EemtrJbuUY2Hnw" source="_wgvVAOX-EemtrJbuUY2Hnw" target="_w_iw4eX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_zGPXoeX-EemtrJbuUY2Hnw" source="_w_iw4eX-EemtrJbuUY2Hnw" target="_xnGgIeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <edges xmi:id="_zabe8eX-EemtrJbuUY2Hnw" source="_w_iw4eX-EemtrJbuUY2Hnw" target="_yK0RMeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+      </edges>
+      <edges xmi:id="_0E5YQeX-EemtrJbuUY2Hnw" source="_yK0RMeX-EemtrJbuUY2Hnw" target="_w_iw4eX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint/fqas"/>
+      </edges>
+      <edges xmi:id="_Eid98OX_EemtrJbuUY2Hnw" source="_wgvVAOX-EemtrJbuUY2Hnw" target="_DP_CYOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_E5pH0OX_EemtrJbuUY2Hnw" source="_DP_CYOX_EemtrJbuUY2Hnw" target="_D9oLgOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <edges xmi:id="_HzmXgeX_EemtrJbuUY2Hnw" source="_wgvVAOX-EemtrJbuUY2Hnw" target="_yK0RMeX-EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/joinpoints"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_UJRTsOX_EemtrJbuUY2Hnw" name="increment instances" conditionText="id2 == id1+1"/>
+    <mappings xmi:id="_wgvVAeX-EemtrJbuUY2Hnw" origin="_wgut8OX-EemtrJbuUY2Hnw" image="_wgvVAOX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_w_iw4uX-EemtrJbuUY2Hnw" origin="_w_iw4OX-EemtrJbuUY2Hnw" image="_w_iw4eX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_xnGgIuX-EemtrJbuUY2Hnw" origin="_xnGgIOX-EemtrJbuUY2Hnw" image="_xnGgIeX-EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_yK0RMuX-EemtrJbuUY2Hnw" origin="_yK0RMOX-EemtrJbuUY2Hnw" image="_yK0RMeX-EemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_fczdcOX_EemtrJbuUY2Hnw" name="deleteFQA">
+    <lhs xmi:id="_fc3H0OX_EemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_grgsQOX_EemtrJbuUY2Hnw" outgoing="_ldhpwOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+      <nodes xmi:id="_h_HCIOX_EemtrJbuUY2Hnw" incoming="_ldhpwOX_EemtrJbuUY2Hnw" outgoing="_l-9i4OX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+      </nodes>
+      <nodes xmi:id="_ih5mIOX_EemtrJbuUY2Hnw" incoming="_l-9i4OX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+      </nodes>
+      <edges xmi:id="_ldhpwOX_EemtrJbuUY2Hnw" source="_grgsQOX_EemtrJbuUY2Hnw" target="_h_HCIOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel/fqas"/>
+      </edges>
+      <edges xmi:id="_l-9i4OX_EemtrJbuUY2Hnw" source="_h_HCIOX_EemtrJbuUY2Hnw" target="_ih5mIOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_jQJMM-X_EemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_jQJMNOX_EemtrJbuUY2Hnw">
+          <conclusion xmi:id="_jQJMNeX_EemtrJbuUY2Hnw">
+            <nodes xmi:id="_jQJzQOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+            </nodes>
+            <nodes xmi:id="_jQJzQuX_EemtrJbuUY2Hnw" incoming="_pC4m4OX_EemtrJbuUY2Hnw" outgoing="_mYL7MOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+            </nodes>
+            <nodes xmi:id="_jQJzROX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+            </nodes>
+            <nodes xmi:id="_jQJMMOX_EemtrJbuUY2Hnw" incoming="_mYL7MOX_EemtrJbuUY2Hnw" outgoing="_pC4m4OX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint"/>
+            </nodes>
+            <edges xmi:id="_mYL7MOX_EemtrJbuUY2Hnw" source="_jQJzQuX_EemtrJbuUY2Hnw" target="_jQJMMOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/appliesOver"/>
+            </edges>
+            <edges xmi:id="_pC4m4OX_EemtrJbuUY2Hnw" source="_jQJMMOX_EemtrJbuUY2Hnw" target="_jQJzQuX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Joinpoint/fqas"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_jQJzQeX_EemtrJbuUY2Hnw" origin="_grgsQOX_EemtrJbuUY2Hnw" image="_jQJzQOX_EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_jQJzQ-X_EemtrJbuUY2Hnw" origin="_h_HCIOX_EemtrJbuUY2Hnw" image="_jQJzQuX_EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_jQJzReX_EemtrJbuUY2Hnw" origin="_ih5mIOX_EemtrJbuUY2Hnw" image="_jQJzROX_EemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_fc3H0eX_EemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_grgsQeX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQAsArchitectureModel"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_grgsQuX_EemtrJbuUY2Hnw" origin="_grgsQOX_EemtrJbuUY2Hnw" image="_grgsQeX_EemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_tIyFQOX_EemtrJbuUY2Hnw" name="nextConfig">
+    <parameters xmi:id="_xl37oOX_EemtrJbuUY2Hnw" name="fqa" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_xl37oeX_EemtrJbuUY2Hnw" name="id1" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_3RpLoOX_EemtrJbuUY2Hnw" name="id2" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_tI8dUOX_EemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_5EtrwOX_EemtrJbuUY2Hnw" outgoing="_7d1fQOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_8llKcOX_EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_5l8wkOX_EemtrJbuUY2Hnw" incoming="_7d1fQOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_-ivasOX_EemtrJbuUY2Hnw" value="id1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_7d1fQOX_EemtrJbuUY2Hnw" source="_5EtrwOX_EemtrJbuUY2Hnw" target="_5l8wkOX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_6XneE-X_EemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_6XneFOX_EemtrJbuUY2Hnw">
+          <conclusion xmi:id="_6XneFeX_EemtrJbuUY2Hnw">
+            <nodes xmi:id="_6XneFuX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_8llKcuX_EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_6XneGOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_-iwBwOX_EemtrJbuUY2Hnw" value="id1">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_6XneEOX_EemtrJbuUY2Hnw" outgoing="_71OrkOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_9Fs08OX_EemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_607FIOX_EemtrJbuUY2Hnw" incoming="_71OrkOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="__6vIYOX_EemtrJbuUY2Hnw" value="id2">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_71OrkOX_EemtrJbuUY2Hnw" source="_6XneEOX_EemtrJbuUY2Hnw" target="_607FIOX_EemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_6XneF-X_EemtrJbuUY2Hnw" origin="_5EtrwOX_EemtrJbuUY2Hnw" image="_6XneFuX_EemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_6XneGeX_EemtrJbuUY2Hnw" origin="_5l8wkOX_EemtrJbuUY2Hnw" image="_6XneGOX_EemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_tI8dUeX_EemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_5EtrweX_EemtrJbuUY2Hnw" outgoing="_7d1fQeX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_8llKceX_EemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_5l8wkeX_EemtrJbuUY2Hnw" incoming="_7d1fQeX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_-ivaseX_EemtrJbuUY2Hnw" value="id1+1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_7d1fQeX_EemtrJbuUY2Hnw" source="_5EtrweX_EemtrJbuUY2Hnw" target="_5l8wkeX_EemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_BETYgOYAEemtrJbuUY2Hnw" name="already exists" conditionText="id2 == id1+1"/>
+    <mappings xmi:id="_5EtrwuX_EemtrJbuUY2Hnw" origin="_5EtrwOX_EemtrJbuUY2Hnw" image="_5EtrweX_EemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_5l8wkuX_EemtrJbuUY2Hnw" origin="_5l8wkOX_EemtrJbuUY2Hnw" image="_5l8wkeX_EemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_EWT70OYAEemtrJbuUY2Hnw" name="previousConfig">
+    <parameters xmi:id="_Gk7IcOYAEemtrJbuUY2Hnw" name="fqa" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_Gk7vgOYAEemtrJbuUY2Hnw" name="id1" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_Gk7vgeYAEemtrJbuUY2Hnw" name="id2" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_EWaCcOYAEemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_Idi28OYAEemtrJbuUY2Hnw" outgoing="_L3pmUOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_NFR3EOYAEemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_I5WCIOYAEemtrJbuUY2Hnw" incoming="_L3pmUOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_OC1EcOYAEemtrJbuUY2Hnw" value="id1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_L3pmUOYAEemtrJbuUY2Hnw" source="_Idi28OYAEemtrJbuUY2Hnw" target="_I5WCIOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_Jjub4-YAEemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_Jjub5OYAEemtrJbuUY2Hnw">
+          <conclusion xmi:id="_Jjub5eYAEemtrJbuUY2Hnw">
+            <nodes xmi:id="_Jjub5uYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_NFSeIeYAEemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_Jjub6OYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_OC1EcuYAEemtrJbuUY2Hnw" value="id1">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_Jjub4OYAEemtrJbuUY2Hnw" incoming="_MJPsoOYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_PNWW0OYAEemtrJbuUY2Hnw" value="id2">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_KNX10OYAEemtrJbuUY2Hnw" outgoing="_MJPsoOYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_NhMXAOYAEemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_MJPsoOYAEemtrJbuUY2Hnw" source="_KNX10OYAEemtrJbuUY2Hnw" target="_Jjub4OYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_Jjub5-YAEemtrJbuUY2Hnw" origin="_Idi28OYAEemtrJbuUY2Hnw" image="_Jjub5uYAEemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_Jjub6eYAEemtrJbuUY2Hnw" origin="_I5WCIOYAEemtrJbuUY2Hnw" image="_Jjub6OYAEemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_EWaCceYAEemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_Idi28eYAEemtrJbuUY2Hnw" outgoing="_L3qNYOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_NFSeIOYAEemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_I5WCIeYAEemtrJbuUY2Hnw" incoming="_L3qNYOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_OC1EceYAEemtrJbuUY2Hnw" value="id1-1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_L3qNYOYAEemtrJbuUY2Hnw" source="_Idi28eYAEemtrJbuUY2Hnw" target="_I5WCIeYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_P9xuMOYAEemtrJbuUY2Hnw" name="already exists" conditionText="id2==id1-1"/>
+    <attributeConditions xmi:id="_RtjpwOYAEemtrJbuUY2Hnw" name="positive" conditionText="id1 > 0"/>
+    <mappings xmi:id="_Idi28uYAEemtrJbuUY2Hnw" origin="_Idi28OYAEemtrJbuUY2Hnw" image="_Idi28eYAEemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_I5WCIuYAEemtrJbuUY2Hnw" origin="_I5WCIOYAEemtrJbuUY2Hnw" image="_I5WCIeYAEemtrJbuUY2Hnw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_USAjgOYAEemtrJbuUY2Hnw" name="changeConfiguration">
+    <parameters xmi:id="_YqowoOYAEemtrJbuUY2Hnw" name="delta" kind="IN">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_YqowoeYAEemtrJbuUY2Hnw" name="fqa" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_YqowouYAEemtrJbuUY2Hnw" name="id1" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <parameters xmi:id="_Yqowo-YAEemtrJbuUY2Hnw" name="id2" kind="VAR">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    </parameters>
+    <lhs xmi:id="_USC_wOYAEemtrJbuUY2Hnw" name="Lhs">
+      <nodes xmi:id="_aXbCkOYAEemtrJbuUY2Hnw" outgoing="_dQxOQOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_eQ5OgOYAEemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_bmkWQOYAEemtrJbuUY2Hnw" incoming="_dQxOQOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_fH7kMOYAEemtrJbuUY2Hnw" value="id1">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dQxOQOYAEemtrJbuUY2Hnw" source="_aXbCkOYAEemtrJbuUY2Hnw" target="_bmkWQOYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+      <formula xsi:type="henshin:Not" xmi:id="_cJO-c-YAEemtrJbuUY2Hnw">
+        <child xsi:type="henshin:NestedCondition" xmi:id="_cJO-dOYAEemtrJbuUY2Hnw">
+          <conclusion xmi:id="_cJO-deYAEemtrJbuUY2Hnw">
+            <nodes xmi:id="_cJO-duYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_eQ5OguYAEemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_cJO-eOYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_fH8LQeYAEemtrJbuUY2Hnw" value="id1">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_cJO-cOYAEemtrJbuUY2Hnw" outgoing="_dlHGkOYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+              <attributes xmi:id="_eqVpQOYAEemtrJbuUY2Hnw" value="fqa">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+              </attributes>
+            </nodes>
+            <nodes xmi:id="_cid90OYAEemtrJbuUY2Hnw" incoming="_dlHGkOYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+              <attributes xmi:id="_hCsnwOYAEemtrJbuUY2Hnw" value="id2">
+                <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+              </attributes>
+            </nodes>
+            <edges xmi:id="_dlHGkOYAEemtrJbuUY2Hnw" source="_cJO-cOYAEemtrJbuUY2Hnw" target="_cid90OYAEemtrJbuUY2Hnw">
+              <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+            </edges>
+          </conclusion>
+          <mappings xmi:id="_cJO-d-YAEemtrJbuUY2Hnw" origin="_aXbCkOYAEemtrJbuUY2Hnw" image="_cJO-duYAEemtrJbuUY2Hnw"/>
+          <mappings xmi:id="_cJO-eeYAEemtrJbuUY2Hnw" origin="_bmkWQOYAEemtrJbuUY2Hnw" image="_cJO-eOYAEemtrJbuUY2Hnw"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs xmi:id="_USC_weYAEemtrJbuUY2Hnw" name="Rhs">
+      <nodes xmi:id="_aXbCkeYAEemtrJbuUY2Hnw" outgoing="_dQxOQeYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA"/>
+        <attributes xmi:id="_eQ5OgeYAEemtrJbuUY2Hnw" value="fqa">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//NamedElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_bmkWQeYAEemtrJbuUY2Hnw" incoming="_dQxOQeYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration"/>
+        <attributes xmi:id="_fH8LQOYAEemtrJbuUY2Hnw" value="id1+delta">
+          <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//Configuration/id"/>
+        </attributes>
+      </nodes>
+      <edges xmi:id="_dQxOQeYAEemtrJbuUY2Hnw" source="_aXbCkeYAEemtrJbuUY2Hnw" target="_bmkWQeYAEemtrJbuUY2Hnw">
+        <type href="http://caosd.lcc.uma.es/FQAsArchitecture#//FQA/configuration"/>
+      </edges>
+    </rhs>
+    <attributeConditions xmi:id="_i_aMEOYAEemtrJbuUY2Hnw" name="already exists" conditionText="id2==id1+delta"/>
+    <attributeConditions xmi:id="_lXPmIOYAEemtrJbuUY2Hnw" name="positive" conditionText="id1 > 0"/>
+    <mappings xmi:id="_aXbCkuYAEemtrJbuUY2Hnw" origin="_aXbCkOYAEemtrJbuUY2Hnw" image="_aXbCkeYAEemtrJbuUY2Hnw"/>
+    <mappings xmi:id="_bmkWQuYAEemtrJbuUY2Hnw" origin="_bmkWQOYAEemtrJbuUY2Hnw" image="_bmkWQeYAEemtrJbuUY2Hnw"/>
+  </units>
+</henshin:Module>

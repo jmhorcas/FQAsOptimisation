@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FQAsArchitecture:FQAsArchitectureModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:FQAsArchitecture="http://caosd.lcc.uma.es/FQAsArchitecture">
+  <joinpoints
+      name="sendMessage"
+      fqas="//@fqas.0">
+    <usagecontext>
+      <variables
+          name="messageSize"
+          value="10000"/>
+    </usagecontext>
+  </joinpoints>
+  <joinpoints
+      name="receiveMessage">
+    <usagecontext>
+      <variables
+          name="messageSize"
+          value="10000"/>
+    </usagecontext>
+  </joinpoints>
+  <joinpoints
+      name="storeMessageIntoDB"
+      fqas="//@fqas.1">
+    <usagecontext>
+      <variables
+          name="messageSize"
+          value="100"/>
+    </usagecontext>
+  </joinpoints>
+  <joinpoints
+      name="retrieveMessageFromDB">
+    <usagecontext>
+      <variables
+          name="messageSize"
+          value="100"/>
+    </usagecontext>
+  </joinpoints>
+  <fqas name="Logging"
+      appliesOver="//@joinpoints.0">
+    <configuration/>
+  </fqas>
+  <fqas name="Compression"
+      appliesOver="//@joinpoints.2">
+    <configuration/>
+  </fqas>
+</FQAsArchitecture:FQAsArchitectureModel>

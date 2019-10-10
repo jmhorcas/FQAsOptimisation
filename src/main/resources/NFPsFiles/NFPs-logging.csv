@@ -1,0 +1,17 @@
+MessageSize (KB),Framework,Output,File Type,Energy Consumption (J),Computational Time (ms)
+100,Log4J,console,txt,2.7,131
+100,Log4J,file,txt,2.81,140
+100,LogBack,console,txt,3.44,166
+100,LogBack,file,txt,5.31,237
+100,java.util.logging,console,txt,2.6,121
+100,java.util.logging,file,txt,2.64,134
+100,Simple Implementation,console,txt,1.95,108
+100,Simple Implementation,file,txt,1.99,106
+10000,Log4J,console,txt,7.94,617
+10000,Log4J,file,txt,8,374
+10000,LogBack,console,txt,8.44,423
+10000,LogBack,file,txt,10.34,462
+10000,java.util.logging,console,txt,7.65,606
+10000,java.util.logging,file,txt,7.79,368
+10000,Simple Implementation,console,txt,6.78,641
+10000,Simple Implementation,file,txt,6.77,328

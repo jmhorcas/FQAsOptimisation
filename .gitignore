@@ -1,0 +1,10 @@
+mdeo-results/
+.classpath
+.project
+.settings/
+target/
+/bin
+META-INF/
+build.properties
+plugin.properties
+plugin.xml
