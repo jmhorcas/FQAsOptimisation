@@ -7,6 +7,9 @@ import java.util.List;
 
 import com.opencsv.bean.CsvToBeanBuilder;
 
+import models.utils.Utils;
+import uma.caosd.FQAsArchitecture.UsageContext;
+
 public class FQAInformationFromCSV implements FQAInformation {
 	private String csvFile;
 	private List<FQAConfigurationInfo> configurations;
@@ -39,5 +42,25 @@ public class FQAInformationFromCSV implements FQAInformation {
 				.build()
 				.parse();
 		return info;
+	}
+
+	@Override
+	public FQAConfigurationInfo getConfiguration(int id, UsageContext uc) {
+		FQAConfigurationInfo config = configurations.get(id);
+//		System.out.println(config.getConfiguration());
+//		List<FQAConfigurationInfo> cc = configurations.stream().filter(c -> c.getConfiguration().equals(config.getConfiguration())).collect(Collectors.toList());
+//		System.out.println(cc.size());
+//		Utils.printUsageContext(uc);
+//		System.out.println("-----");
+//		cc.forEach(m -> System.out.println(m.getConfiguration()));
+//		cc.forEach(m -> Utils.printUsageContext(m.getUsageContext()));
+//		List<FQAConfigurationInfo> ccc = cc.stream().filter(c -> Utils.equalsUsageContext(c.getUsageContext(), uc)).collect(Collectors.toList());
+//		System.out.println(ccc.size());
+		
+		return configurations.stream()
+			.filter(c -> c.getConfiguration().equals(config.getConfiguration()))
+			.filter(c -> Utils.equalsUsageContext(c.getUsageContext(), uc))
+			.findFirst()
+			.get();
 	}
 }

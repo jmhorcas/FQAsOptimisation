@@ -4,11 +4,14 @@ problem {
 	model <example_2.xmi>
 }
 goal {
-	objective ApplicationFQAs maximise java { "models.fitness.MaximiseApplicationOfFQAs" }
+//	objective ApplicationFQAs maximise java { "models.fitness.MaximiseApplicationOfFQAs" }
 	objective Components minimise java { "models.fitness.MinimiseComponents" }
-//	objective EnergyConsumption minimise java { "models.fitness.MinimiseEnergyConsumption" }
-	objective ExecutionTime minimise java { "models.fitness.MinimiseExecutionTime" }
+	objective EnergyConsumption minimise java { "models.fitness.MinimiseEnergyConsumption" }
+//	objective ExecutionTime minimise java { "models.fitness.MinimiseExecutionTime" }
 	constraint CoverAllJoinpoints java { "models.constraints.CoverAllJoinpoints" }
+	
+//	constraint ValidConfigurations java { "models.constraints.ValidConfigurations" }
+//	constraint ValidUsageContext java { "models.constraints.ValidUsageContext" }
 }
 search { 
 	mutate using <FQAsEvolvers.henshin> unit "weaveFQA"
@@ -24,9 +27,9 @@ search {
 }
 solver {
 	optimisation provider moea algorithm NSGAII {
-		population: 50
+		population: 500
 		variation: mutation
-		mutation.step: 1
+		mutation.step: 2
 		mutation.strategy: random
 	}
 	termination {

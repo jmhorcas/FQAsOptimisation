@@ -20,7 +20,6 @@ public class Utils {
 			Variable var = factory.createVariable();
 			var.setName(v);
 			var.setValue(variables.get(v));
-			
 			uc.getVariables().add(var);
 		}
 		return uc;
@@ -70,6 +69,20 @@ public class Utils {
 		str += "]";
 		System.out.println(str);
 	}
+	
+	public static void printUsageContext(UsageContext uc) {
+		String res = "Usage Context: [";
+		if (!uc.getVariables().isEmpty()) {
+			for (Variable v : uc.getVariables()) {
+				res += v.getName() + "=" + v.getValue();
+				res += ", ";
+			}
+			res = res.substring(0, res.length()-2);
+		}
+		res += "]";
+		System.out.println(res);
+	}
+	
 	
 	/*
 	public static void main(String[] args) {

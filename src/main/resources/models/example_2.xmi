@@ -4,8 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:FQAsArchitecture="http://caosd.lcc.uma.es/FQAsArchitecture">
   <joinpoints
-      name="sendMessage"
-      fqas="//@fqas.0">
+      name="sendMessage">
     <usagecontext>
       <variables
           name="messageSize"
@@ -21,8 +20,7 @@
     </usagecontext>
   </joinpoints>
   <joinpoints
-      name="storeMessageIntoDB"
-      fqas="//@fqas.1">
+      name="storeMessageIntoDB">
     <usagecontext>
       <variables
           name="messageSize"
@@ -37,12 +35,7 @@
           value="100"/>
     </usagecontext>
   </joinpoints>
-  <fqas name="Logging"
-      appliesOver="//@joinpoints.0">
-    <configuration/>
-  </fqas>
-  <fqas name="Compression"
-      appliesOver="//@joinpoints.2">
+  <fqas name="Logging">
     <configuration/>
   </fqas>
 </FQAsArchitecture:FQAsArchitectureModel>

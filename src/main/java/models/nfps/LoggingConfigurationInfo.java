@@ -11,8 +11,7 @@ public class LoggingConfigurationInfo implements FQAConfigurationInfo {
 	@CsvBindByPosition(position = 0)
 	private int ucMessageSize;
 	
-	@CsvBindByPosition(position = 0)
-	private int himucMessageSize;
+	private int himucMessageSize = 0;
 	
 	@CsvBindByPosition(position = 1)
 	private String paramFramework;
